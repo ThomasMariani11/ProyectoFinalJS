@@ -1,0 +1,122 @@
+[
+    {
+        "id":"remera-01",
+        "titulo":"Remera 01",
+        "imagen":"./img/remeras/img1.jpg",
+        "categoria":{
+            "nombre":"Remeras",
+            "id":"remeras"
+        },
+        "precio": 10000
+    },
+    {
+        "id":"remera-02",
+        "titulo":"Remera 02",
+        "imagen":"./img/remeras/img2.jpg",
+        "categoria":{
+            "nombre":"Remeras",
+            "id":"remeras"
+        },
+        "precio": 11000
+    },
+    {
+        "id":"remera-03",
+        "titulo":"Remera 03",
+        "imagen":"./img/remeras/img3.jpg",
+        "categoria":{
+            "nombre":"Remeras",
+            "id":"remeras"
+        },
+        "precio": 12000
+    },
+    {
+        "id":"remera-04",
+        "titulo":"Remera 04",
+        "imagen":"./img/remeras/img4.jpg",
+        "categoria":{
+            "nombre":"Remeras",
+            "id":"remeras"
+        },
+        "precio": 13000
+    },
+    {
+        "id":"pantalon-01",
+        "titulo":"Pantalon 01",
+        "imagen":"./img/pantalones/img1p.jpg",
+        "categoria":{
+            "nombre":"Pantalones",
+            "id":"pantalones"
+        },
+        "precio": 20000
+    },
+    {
+        "id":"pantalon-02",
+        "titulo":"Pantalon 02",
+        "imagen":"./img/pantalones/img2p.jpg",
+        "categoria":{
+            "nombre":"Pantalones",
+            "id":"pantalones"
+        },
+        "precio": 22000
+    },
+    {
+        "id":"pantalon-03",
+        "titulo":"Pantalon 03",
+        "imagen":"./img/pantalones/img3p.jpg",
+        "categoria":{
+            "nombre":"Pantalones",
+            "id":"pantalones"
+        },
+        "precio": 23000
+    },
+    {
+        "id":"pantalon-04",
+        "titulo":"Pantalon 04",
+        "imagen":"./img/pantalones/img4p.jpg",
+        "categoria":{
+            "nombre":"Pantalones",
+            "id":"pantalones"
+        },
+        "precio": 25000
+    },
+    {
+        "id":"zapatillas-01",
+        "titulo":"Zapatillas 01",
+        "imagen":"./img/zapatillas/img1z.jpg",
+        "categoria":{
+            "nombre":"Zapatillas",
+            "id":"zapatillas"
+        },
+        "precio": 30000
+    },
+    {
+        "id":"zapatillas-02",
+        "titulo":"Zapatillas 02",
+        "imagen":"./img/zapatillas/img2z.jpg",
+        "categoria":{
+            "nombre":"Zapatillas",
+            "id":"zapatillas"
+        },
+        "precio": 31000
+    },
+    {
+        "id":"zapatillas-03",
+        "titulo":"Zapatillas 03",
+        "imagen":"./img/zapatillas/img3z.jpg",
+        "categoria":{
+            "nombre":"Zapatillas",
+            "id":"zapatillas"
+        },
+        "precio": 33000
+    },
+    {
+        "id":"zapatillas-04",
+        "titulo":"Zapatillas 04",
+        "imagen":"./img/zapatillas/img4z.jpg",
+        "categoria":{
+            "nombre":"Zapatillas",
+            "id":"zapatillas"
+        },
+        "precio": 34000
+    }
+]
