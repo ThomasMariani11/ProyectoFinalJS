@@ -17,6 +17,9 @@ let botonesEliminar = document.getElementsByClassName('carrito-producto-eliminar
 const botonComprar = document.getElementById('comprar')
 const botonVaciar = document.getElementById('vaciar')
 const contenedorAcciones = document.querySelector('.carrito-acciones')
+const contenedorAccionesTotal = document.querySelector('.carrito-acciones-total')
+const contenedorAccionesComprar = document.querySelector('.carrito-acciones-comprar')
+console.log(contenedorAccionesComprar)
 const textoCompra = document.querySelector('.compra')
 const textoVacio = document.querySelector('.carrito-vacio')
 let numTotal = document.querySelector('#total')
@@ -106,6 +109,8 @@ function agregarAlcarrito(e){
     mostrarCarrito()
     total()
     contenedorAcciones.classList.remove('disabled')
+    contenedorAccionesComprar.classList.remove('disabled')
+    contenedorAccionesTotal.classList.remove('disabled')
     contenedorCarrito.classList.remove('disabled')
     textoCompra.classList.add('disabled')
     localStorage.setItem('productos-en-carrito', JSON.stringify(productosCarrito))
@@ -153,6 +158,8 @@ function mostrarCarrito(){
     if(productosCarrito.length == 0){
         textoVacio.classList.remove('disabled')
         contenedorAcciones.classList.add('disabled')
+        contenedorAccionesComprar.classList.add('disabled')
+        contenedorAccionesTotal.classList.add('disabled')
         divConfirmCompra.classList.add('disabled')
     }else{
         textoVacio.classList.add('disabled')
@@ -224,6 +231,8 @@ function vaciarCarrito(){
     textoVacio.classList.remove('disabled')
     contenedorCarrito.classList.add('disabled')
     contenedorAcciones.classList.add('disabled')
+    contenedorAccionesComprar.classList.add('disabled')
+    contenedorAccionesTotal.classList.add('disabled')
     productosCarrito = []
     localStorage.setItem('productos-en-carrito',JSON.stringify(productosCarrito))
     actualizarNumero()
@@ -232,6 +241,8 @@ function vaciarCarrito(){
 //funcion para la parte coomprar en el carrito
 function comprarCarrito(){
     contenedorCarrito.classList.add('disabled')
+    contenedorAccionesComprar.classList.add('disabled')
+    contenedorAccionesTotal.classList.add('disabled')
     contenedorAcciones.classList.add('disabled')
     divConfirmCompra.classList.remove('disabled')
 }
@@ -259,6 +270,8 @@ botonCancelar.addEventListener('click',cancelarCompra)
 function cancelarCompra(){
     contenedorCarrito.classList.remove('disabled')
     contenedorAcciones.classList.remove('disabled')
+    contenedorAccionesComprar.classList.remove('disabled')
+    contenedorAccionesTotal.classList.remove('disabled')
     divConfirmCompra.classList.add('disabled')
 }
 //funcion para calcular total
