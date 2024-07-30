@@ -150,7 +150,7 @@ function mostrarCarrito(){
                 <small>subtotal</small>
                 <p>$${producto.precio * producto.cantidad}</p>
             </div>
-            <button class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash">Eliminar</i></button>
+            <button class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash"><p>Eliminar</p></i></button>
         `
         contenedorCarrito.append(div2)
     })
@@ -277,6 +277,6 @@ function cancelarCompra(){
 //funcion para calcular total
 function total(){
     let nuevoTotal = productosCarrito.reduce((acc,producto) => acc + (producto.cantidad * producto.precio),0)
-    numTotal.innerText = nuevoTotal
-    numTotal2.innerText = nuevoTotal
+    numTotal.innerText = '$' + nuevoTotal
+    numTotal2.innerText = '$' + nuevoTotal
 }
